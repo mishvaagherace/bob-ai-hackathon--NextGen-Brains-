@@ -1,121 +1,64 @@
-# 🚀 [Your Project Title Here]
+# MISSIONREADY AI
+## Mission Readiness & Predictive Maintenance Copilot
 
-> ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
-
----
-
-## 👥 Team
-
-| Field | Value |
-|---|---|
-| **Team Name** | [Your Team Name] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
-| **Members** | [Name 1], [Name 2], [Name 3] |
+A production-quality AI-powered mission readiness and predictive maintenance dashboard for military organizations.
 
 ---
 
-## 🎯 Problem Statement
-
-> In 2–3 sentences: What problem does your project solve? Who experiences this problem?
-
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
-
----
-
-## 💡 Solution
-
-> In 2–3 sentences: What did you build? How does it solve the problem above?
-
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
-
----
-
-## ✨ Key Features
-
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
-
----
-
-## 🛠️ Tech Stack
-
-| Category | Technologies |
-|---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
-
----
-
-## 📁 Repository Structure
-
-```
-├── src/                  # All source code
-├── docs/                 # Written documentation
-│   ├── problem-statement.md
-│   ├── solution-overview.md
-│   ├── architecture.md
-│   └── setup-guide.md
-├── demo/                 # Demo artifacts
-│   ├── screenshots/      # App screenshots
-│   └── demo-video-link.txt  # Link to demo video
-├── presentation/         # Slide deck
-└── submission.yaml       # Structured submission metadata
-```
-
----
-
-## ⚡ How to Run
-
-> **Copy these exact steps from your [`docs/setup-guide.md`](docs/setup-guide.md)**
+## Getting Started
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
+cd missionready-ai
+npm install
+npm run dev
+```
 
-# 2. Install dependencies
-[your install command here]
+Then open [http://localhost:5173](http://localhost:5173)
 
-# 3. Configure environment
-cp .env.example .env
-# Edit .env with your values
+**Demo credentials:** Any email + password (demo auth — no real credentials stored)
 
-# 4. Run the project
-[your run command here]
+---
+
+## Features
+
+- **AI-powered fleet readiness** — Real-time health scores for 20+ assets
+- **Predictive maintenance** — 9 predicted failures with failure probability and sensor analysis
+- **AI Copilot** — Natural language interface for querying fleet status
+- **Sensor Intelligence** — Interactive charts with anomaly detection
+- **Maintenance Planner** — AI-prioritized maintenance schedule
+- **Alert Center** — Severity-categorized real-time alerts
+- **Analytics Dashboard** — Historical trends and performance metrics
+- **Digital Twin View** — Component health visualization per asset
+- **Dark/Light Mode** — Full theme toggle
+
+---
+
+## Project Structure
+
+```
+src/
+  components/
+    layout/     — Sidebar, TopNav
+    ui/         — Toast, AssetDetailDrawer, AIAnalysisOverlay
+  data/         — mockData.ts (20 assets, 9 failures, 22 maintenance records, 14 alerts)
+  hooks/        — useAppContext (global state)
+  layouts/      — AppLayout
+  pages/        — All 9 pages + Login
+  types/        — TypeScript type definitions
+  utils/        — aiEngine, helpers
 ```
 
 ---
 
-## 🖥️ Demo
+## Tech Stack
 
-| Artifact | Link |
-|---|---|
-| 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
-| 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
-| 📊 Presentation | [See presentation/slides.pdf](presentation/) |
-
----
-
-## ⚠️ Known Limitations
-
-> Be honest — judges appreciate transparency over overclaiming.
-
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
+- React 18 + TypeScript
+- Vite
+- Tailwind CSS
+- Recharts
+- Lucide React
 
 ---
 
-## 🏅 What We're Most Proud Of
-
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
-
----
+> This is a decision-support and predictive maintenance prototype only.
+> All data is simulated. No real military information is used.
